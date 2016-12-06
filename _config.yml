@@ -1,0 +1,15 @@
+title: Makk Project
+email: makkproject@gmail.com
+description:
+  We produce high-quality visualisations to make your project
+  even more persuasive in order to get the deserved attention.
+baseurl: ""
+url: "http://www.makkproject.com"
+
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
