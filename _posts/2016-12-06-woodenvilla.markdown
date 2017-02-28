@@ -1,5 +1,5 @@
 ---
 title:    "Project Name"
 category: "Category"
-image:    "forestvilla.jpg"
+image:    "woodenvilla.jpg"
 ---
