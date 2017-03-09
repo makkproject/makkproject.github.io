@@ -1,5 +1,3 @@
----
----
 /*!
  * Start Bootstrap - Creative v3.3.7+1 (http://startbootstrap.com/template-overviews/creative)
  * Copyright 2013-2016 Start Bootstrap
@@ -477,4 +475,15 @@ a.no-color, a.no-color:focus, a.no-color:hover {
 
 .portfolio-box:hover > img {
   filter: none;
+}
+
+/* Polityka Cookies */
+
+#cookie-warn{ position: fixed; bottom: 0; background: #EEE; margin: 0; padding: 15px; width: 100%; display: none; z-index: 99999; }
+#cookie-warn a{ color: #ff4444; text-transform: uppercase; float: right; margin-right: 20px; margin-top: 10px; }
+#cookie-warn p{ font-size: 14px; color: #333; }
+
+.icon-3d {
+    height: 56px;
+    fill: #d47965;
 }
