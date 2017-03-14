@@ -223,137 +223,30 @@ layout: compress
             <div class="row no-gutter">
 
                 <!-- 1st Fancybox gallery -->
+                
+                {% for post in site.posts reversed %}
                 <div class="col-lg-4 col-xs-6">
-                    <a class="slideshow-thumbs2 portfolio-box" rel="slideshow-thumbs1" href="img/portfolio/1/main1.jpg">
-                        <img src="img/portfolio/1/thumb1.jpg" alt="" />
+                    <a class="slideshow-thumbs2 portfolio-box" rel="slideshow-thumbs1" href="img/portfolio/{{ post.image }}">
+                        <img src="img/portfolio/thb-{{ post.image }}" alt="" />
                         <div class="box-title">
                             <h2>Tytuł Projektu</h2>
                         </div>
                     </a>
                     <div class="hidden-images">
-                        <a class="slideshow-thumbs2" rel="slideshow-thumbs1" href="img/portfolio/1/main1.jpg" >
-                            <img src="img/portfolio/thb-single-house-concrete.jpg" alt="" />
+                        <a class="slideshow-thumbs2" rel="slideshow-thumbs1" href="img/portfolio/{{ post.image }}" >
+                            <img src="img/portfolio/thb-{{ post.image }}" alt="" />
                         </a>
 
-                        <a class="slideshow-thumbs2" rel="slideshow-thumbs1" href="img/portfolio/single-house-concrete.jpg" >
-                            <img src="img/portfolio/thb-single-house-concrete.jpg" alt="" />
+                        <a class="slideshow-thumbs2" rel="slideshow-thumbs1" href="img/portfolio/{{ post.image }}" >
+                            <img src="img/portfolio/thb-{{ post.image }}" alt="" />
                         </a>
 
-                        <a class="slideshow-thumbs2" rel="slideshow-thumbs1" href="img/portfolio/single-house-concrete.jpg">
-                            <img src="img/portfolio/thb-single-house-concrete.jpg" alt="" />
+                        <a class="slideshow-thumbs2" rel="slideshow-thumbs1" href="img/portfolio/{{ post.image }}">
+                            <img src="img/portfolio/thb-{{ post.image }}" alt="" />
                         </a>
                     </div>
                 </div>
-               <!-- 2nd Fancybox gallery -->
-                <div class="col-lg-4 col-xs-6">
-                    <a class="slideshow-thumbs2 portfolio-box" rel="slideshow-thumbs2" href="img/portfolio/single-house-brick.jpg">
-                        <img src="img/portfolio/thb-single-house-brick.jpg" alt="" />
-                        <div class="box-title">
-                            <h2>Tytuł Projektu</h2>
-                        </div>
-                    </a>
-                    <div class="hidden-images">
-                        <a class="slideshow-thumbs2" rel="slideshow-thumbs2" href="img/portfolio/single-house-brick.jpg" >
-                            <img src="img/portfolio/thb-single-house-brick.jpg" alt="" />
-                        </a>
-
-                        <a class="slideshow-thumbs2" rel="slideshow-thumbs2" href="img/portfolio/single-house-brick.jpg" >
-                            <img src="img/portfolio/thb-single-house-brick.jpg" alt="" />
-                        </a>
-
-                        <a class="slideshow-thumbs2" rel="slideshow-thumbs2" href="img/portfolio/single-house-brick.jpg">
-                            <img src="img/portfolio/thb-single-house-brick.jpg" alt="" />
-                        </a>
-                    </div>
-                </div>
-               <!-- 3rd Fancybox gallery -->
-                <div class="col-lg-4 col-xs-6">
-                    <a class="slideshow-thumbs2 portfolio-box" rel="slideshow-thumbs3" href="img/portfolio/single-house-brick.jpg">
-                        <img src="img/portfolio/thb-single-house-brick.jpg" alt="" />
-                        <div class="box-title">
-                            <h2>Tytuł Projektu</h2>
-                        </div>
-                    </a>
-                    <div class="hidden-images">
-                        <a class="slideshow-thumbs2" rel="slideshow-thumbs3" href="img/portfolio/single-house-brick.jpg" >
-                            <img src="img/portfolio/thb-single-house-brick.jpg" alt="" />
-                        </a>
-
-                        <a class="slideshow-thumbs2" rel="slideshow-thumbs3" href="img/portfolio/single-house-brick.jpg" >
-                            <img src="img/portfolio/thb-single-house-brick.jpg" alt="" />
-                        </a>
-
-                        <a class="slideshow-thumbs2" rel="slideshow-thumbs3" href="img/portfolio/single-house-brick.jpg">
-                            <img src="img/portfolio/thb-single-house-brick.jpg" alt="" />
-                        </a>
-                    </div>
-                </div>
-               <!-- 4th Fancybox gallery -->
-                <div class="col-lg-4 col-xs-6">
-                    <a class="slideshow-thumbs2 portfolio-box" rel="slideshow-thumbs4" href="img/portfolio/single-house-brick.jpg">
-                        <img src="img/portfolio/thb-single-house-brick.jpg" alt="" />
-                        <div class="box-title">
-                            <h2>Tytuł Projektu</h2>
-                        </div>
-                    </a>
-                    <div class="hidden-images">
-                        <a class="slideshow-thumbs2" rel="slideshow-thumbs4" href="img/portfolio/single-house-brick.jpg" >
-                            <img src="img/portfolio/thb-single-house-brick.jpg" alt="" />
-                        </a>
-
-                        <a class="slideshow-thumbs2" rel="slideshow-thumbs4" href="img/portfolio/single-house-brick.jpg" >
-                            <img src="img/portfolio/thb-single-house-brick.jpg" alt="" />
-                        </a>
-
-                        <a class="slideshow-thumbs2" rel="slideshow-thumbs4" href="img/portfolio/single-house-brick.jpg">
-                            <img src="img/portfolio/thb-single-house-brick.jpg" alt="" />
-                        </a>
-                    </div>
-                </div>
-               <!-- 5th Fancybox gallery -->
-                <div class="col-lg-4 col-xs-6">
-                    <a class="slideshow-thumbs2 portfolio-box" rel="slideshow-thumbs5" href="img/portfolio/single-house-brick.jpg">
-                        <img src="img/portfolio/thb-single-house-brick.jpg" alt="" />
-                        <div class="box-title">
-                            <h2>Tytuł Projektu</h2>
-                        </div>
-                    </a>
-                    <div class="hidden-images">
-                        <a class="slideshow-thumbs2" rel="slideshow-thumbs5" href="img/portfolio/single-house-brick.jpg" >
-                            <img src="img/portfolio/thb-single-house-brick.jpg" alt="" />
-                        </a>
-
-                        <a class="slideshow-thumbs2" rel="slideshow-thumbs5" href="img/portfolio/single-house-brick.jpg" >
-                            <img src="img/portfolio/thb-single-house-brick.jpg" alt="" />
-                        </a>
-
-                        <a class="slideshow-thumbs2" rel="slideshow-thumbs5" href="img/portfolio/single-house-brick.jpg">
-                            <img src="img/portfolio/thb-single-house-brick.jpg" alt="" />
-                        </a>
-                    </div>
-                </div>
-               <!-- 6th Fancybox gallery -->
-                <div class="col-lg-4 col-xs-6">
-                    <a class="slideshow-thumbs2 portfolio-box" rel="slideshow-thumbs6" href="img/portfolio/single-house-brick.jpg">
-                        <img src="img/portfolio/thb-single-house-brick.jpg" alt="" />
-                        <div class="box-title">
-                            <h2>Tytuł Projektu</h2>
-                        </div>
-                    </a>
-                    <div class="hidden-images">
-                        <a class="slideshow-thumbs2" rel="slideshow-thumbs6" href="img/portfolio/single-house-brick.jpg" >
-                            <img src="img/portfolio/thb-single-house-brick.jpg" alt="" />
-                        </a>
-
-                        <a class="slideshow-thumbs2" rel="slideshow-thumbs6" href="img/portfolio/single-house-brick.jpg" >
-                            <img src="img/portfolio/thb-single-house-brick.jpg" alt="" />
-                        </a>
-
-                        <a class="slideshow-thumbs2" rel="slideshow-thumbs6" href="img/portfolio/single-house-brick.jpg">
-                            <img src="img/portfolio/thb-single-house-brick.jpg" alt="" />
-                        </a>
-                    </div>
-                </div>
+                 {% endfor %}
             </div>
             <!--
             <div class="container-fluid">
