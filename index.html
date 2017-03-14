@@ -27,19 +27,31 @@ layout: compress
         <!-- Theme CSS -->
         <link href="css/main.css" rel="stylesheet">
 
+        <!-- Fancybox CSS -->
+        <link href="fancybox/jquery.fancybox.css" rel="stylesheet">
+        <link href="fancybox/jquery.fancybox-thumbs.css" rel="stylesheet">
+
+
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
-        
+
         <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-93339346-1', 'auto');
-  ga('send', 'pageview');
+            ga('create', 'UA-93339346-1', 'auto');
+            ga('send', 'pageview');
 
-</script>
+        </script>
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -205,31 +217,61 @@ layout: compress
                     <hr class="primary">
                 </div>
             </aside>
+
+            <div class="row no-gutter">
+ {% for post in site.posts reversed %}
+                <!-- 1st Fancybox gallery -->
+                <div class="col-lg-4 col-xs-6">
+                    <a class="slideshow-thumbs2 portfolio-box" rel="slideshow-thumbs1" href="img/portfolio/{{ post.image }}">
+                        <img src="img/portfolio/thb-{{ post.image }}" alt="" />
+                        <div class="box-title">
+                            <h2>Tytuł Projektu</h2>
+                        </div>
+                    </a>
+                    <div class="hidden-images">
+                        <a class="slideshow-thumbs2" rel="slideshow-thumbs1" href="img/portfolio/{{ post.image }}" >
+                            <img src="img/portfolio/thb-{{ post.image }}" alt="" />
+                        </a>
+
+                        <a class="slideshow-thumbs2" rel="slideshow-thumbs1" href="img/portfolio/{{ post.image }}" >
+                            <img src="img/portfolio/thb-{{ post.image }}" alt="" />
+                        </a>
+
+                        <a class="slideshow-thumbs2" rel="slideshow-thumbs1" href="img/portfolio/{{ post.image }}">
+                            <img src="img/portfolio/thb-{{ post.image }}" alt="" />
+                        </a>
+                    </div>
+                </div>
+                
+                    {% endfor %}
+            </div>
+            <!--
             <div class="container-fluid">
                 <div class="row no-gutter popup-gallery">
                     {% for post in site.posts reversed %}
                     <div class="col-lg-4 col-xs-6">
                         <a href="img/portfolio/{{ post.image }}" class="portfolio-box">
                             <img src="img/portfolio/thb-{{ post.image }}" class="img-responsive" alt="">
-                            <!--
-                            <div class="portfolio-box-caption">
-                              <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                  {{ post.category }}
-                                </div>
-                                <div class="project-name">
-                                  {{ post.title }}
-                                </div>
-                              </div>
-                            </div>
-                            -->
-                        </a>
-                    </div>
-                    {% endfor %}
+        
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  {{ post.category }}
                 </div>
+                <div class="project-name">
+                  {{ post.title }}
+                </div>
+              </div>
             </div>
-            <aside class="bg-dark">
-            </aside>
+           
+        </a>
+    </div>
+    {% endfor %}
+</div>
+</div>
+<aside class="bg-dark">
+</aside>
+            -->
         </section>
 
         <section id="about">
@@ -374,7 +416,7 @@ layout: compress
                 </div>
             </div>
         </section>
-        
+
         <section id="cookie-warn">
             <div class="icon-cookie"></div>
             <p><strong>UWAGA!</strong> Nasza strona u&#380;ywa ciasteczek (cookies), do analizy odwiedzin, dzi&#281;ki czemu nasz serwis mo&#380;e dzia&#322;a&#263; lepiej.
@@ -391,8 +433,11 @@ layout: compress
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha256-P93G0oq6PBPWTP1IR8Mz/0jHHUpaWL0aBJTKauisG7Q=" crossorigin="anonymous"></script>
         <!-- Theme JavaScript -->
         <script src="js/main.js"></script>
-        
-          <script>
+        <!-- Fancybox JavaScript -->
+        <script src="fancybox/jquery.fancybox.js"></script>
+        <script src="fancybox/jquery.fancybox-thumbs.js"></script>
+
+        <script>
             $().ready(function () {
                 var sName = "cookiesok";
                 $("#close-cookie-warn").click(function () {
@@ -408,6 +453,118 @@ layout: compress
                     $("#cookie-warn").show();
                 }
             });
+        </script>
+
+
+        <script>
+            $(document).ready(function () {
+
+                $('.slideshow-thumbs1').fancybox({
+                    prevEffect: 'none',
+                    nextEffect: 'none',
+                    helpers: {
+                        // This thumbs feature requires 2 unique Fancybox files (.js, .css) called Thumbnail Helper files.
+                        // When used as shown and with the extra two files above, it places mini thumbnails inside modal.
+                        // The extra files are inside the 'helper' folder when you download Fancybox2 from the homepage.
+                        thumbs: {
+                            width: 100,
+                            height: 50
+                        }
+                    }
+                });
+
+            });
+
+            $(document).ready(function () {
+
+                $('.slideshow-thumbs2').fancybox({
+                    prevEffect: 'none',
+                    nextEffect: 'none',
+                    helpers: {
+                        // This thumbs feature requires 2 unique Fancybox files (.js, .css) called Thumbnail Helper files.
+                        // When used as shown and with the extra two files above, it places mini thumbnails inside modal.
+                        // The extra files are inside the 'helper' folder when you download Fancybox2 from the homepage.
+                        thumbs: {
+                            width: 100,
+                            height: 50
+                        }
+                    }
+                });
+
+            });
+
+            $(document).ready(function () {
+
+                $('.slideshow-thumbs3').fancybox({
+                    prevEffect: 'none',
+                    nextEffect: 'none',
+                    helpers: {
+                        // This thumbs feature requires 2 unique Fancybox files (.js, .css) called Thumbnail Helper files.
+                        // When used as shown and with the extra two files above, it places mini thumbnails inside modal.
+                        // The extra files are inside the 'helper' folder when you download Fancybox2 from the homepage.
+                        thumbs: {
+                            width: 100,
+                            height: 50
+                        }
+                    }
+                });
+
+            });
+
+            $(document).ready(function () {
+
+                $('.slideshow-thumbs4').fancybox({
+                    prevEffect: 'none',
+                    nextEffect: 'none',
+                    helpers: {
+                        // This thumbs feature requires 2 unique Fancybox files (.js, .css) called Thumbnail Helper files.
+                        // When used as shown and with the extra two files above, it places mini thumbnails inside modal.
+                        // The extra files are inside the 'helper' folder when you download Fancybox2 from the homepage.
+                        thumbs: {
+                            width: 100,
+                            height: 50
+                        }
+                    }
+                });
+
+            });
+
+            $(document).ready(function () {
+
+                $('.slideshow-thumbs5').fancybox({
+                    prevEffect: 'none',
+                    nextEffect: 'none',
+                    helpers: {
+                        // This thumbs feature requires 2 unique Fancybox files (.js, .css) called Thumbnail Helper files.
+                        // When used as shown and with the extra two files above, it places mini thumbnails inside modal.
+                        // The extra files are inside the 'helper' folder when you download Fancybox2 from the homepage.
+                        thumbs: {
+                            width: 100,
+                            height: 50
+                        }
+                    }
+                });
+
+            });
+
+            $(document).ready(function () {
+
+                $('.slideshow-thumbs6').fancybox({
+                    prevEffect: 'none',
+                    nextEffect: 'none',
+                    helpers: {
+                        // This thumbs feature requires 2 unique Fancybox files (.js, .css) called Thumbnail Helper files.
+                        // When used as shown and with the extra two files above, it places mini thumbnails inside modal.
+                        // The extra files are inside the 'helper' folder when you download Fancybox2 from the homepage.
+                        thumbs: {
+                            width: 100,
+                            height: 50
+                        }
+                    }
+                });
+
+            });
+
         </script>
     </body>
 </html>
