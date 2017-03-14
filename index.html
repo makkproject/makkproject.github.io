@@ -1,4 +1,6 @@
-
+---
+layout: compress
+---
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -217,32 +219,30 @@
             </aside>
 
             <div class="row no-gutter">
- {% for post in site.posts reversed %}
+
                 <!-- 1st Fancybox gallery -->
                 <div class="col-lg-4 col-xs-6">
-                    <a class="slideshow-thumbs2 portfolio-box" rel="slideshow-thumbs1" href="img/portfolio/{{ post.image }}">
-                        <img src="img/portfolio/thb-{{ post.image }}" alt="" />
+                    <a class="slideshow-thumbs2 portfolio-box" rel="slideshow-thumbs1" href="img/portfolio/1/main1.jpg">
+                        <img src="img/portfolio/1/thumb1.jpg" alt="" />
                         <div class="box-title">
                             <h2>Tytuł Projektu</h2>
                         </div>
                     </a>
                     <div class="hidden-images">
-                        <a class="slideshow-thumbs2" rel="slideshow-thumbs1" href="img/portfolio/{{ post.image }}" >
-                            <img src="img/portfolio/thb-{{ post.image }}" alt="" />
+                        <a class="slideshow-thumbs2" rel="slideshow-thumbs1" href="img/portfolio/1/main1.jpg" >
+                            <img src="img/portfolio/thb-single-house-concrete.jpg" alt="" />
                         </a>
 
-                        <a class="slideshow-thumbs2" rel="slideshow-thumbs1" href="img/portfolio/{{ post.image }}" >
-                            <img src="img/portfolio/thb-{{ post.image }}" alt="" />
+                        <a class="slideshow-thumbs2" rel="slideshow-thumbs1" href="img/portfolio/single-house-concrete.jpg" >
+                            <img src="img/portfolio/thb-single-house-concrete.jpg" alt="" />
                         </a>
 
-                        <a class="slideshow-thumbs2" rel="slideshow-thumbs1" href="img/portfolio/{{ post.image }}">
-                            <img src="img/portfolio/thb-{{ post.image }}" alt="" />
+                        <a class="slideshow-thumbs2" rel="slideshow-thumbs1" href="img/portfolio/single-house-concrete.jpg">
+                            <img src="img/portfolio/thb-single-house-concrete.jpg" alt="" />
                         </a>
                     </div>
                 </div>
-                
-                    {% endfor %}
-            </div>
+              
             <!--
             <div class="container-fluid">
                 <div class="row no-gutter popup-gallery">
@@ -250,7 +250,7 @@
                     <div class="col-lg-4 col-xs-6">
                         <a href="img/portfolio/{{ post.image }}" class="portfolio-box">
                             <img src="img/portfolio/thb-{{ post.image }}" class="img-responsive" alt="">
-        
+            <!--
             <div class="portfolio-box-caption">
               <div class="portfolio-box-caption-content">
                 <div class="project-category text-faded">
@@ -490,7 +490,7 @@
                 });
 
             });
-
+            
             $(document).ready(function () {
 
                 $('.slideshow-thumbs3').fancybox({
@@ -508,7 +508,7 @@
                 });
 
             });
-
+            
             $(document).ready(function () {
 
                 $('.slideshow-thumbs4').fancybox({
@@ -526,7 +526,7 @@
                 });
 
             });
-
+            
             $(document).ready(function () {
 
                 $('.slideshow-thumbs5').fancybox({
@@ -544,7 +544,7 @@
                 });
 
             });
-
+            
             $(document).ready(function () {
 
                 $('.slideshow-thumbs6').fancybox({
