@@ -293,8 +293,8 @@ header .header-content .header-content-inner p {
   padding-left: 0; }
 
 .no-gutter {
-  padding-right: 0 !important;
-  padding-left: 0 !important; }
+  margin-right: 0 !important;
+  margin-left: 0 !important; }
 
 .btn-default {
   color: #222222;
