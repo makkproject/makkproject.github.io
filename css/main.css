@@ -447,8 +447,31 @@ body {
 a.no-color, a.no-color:focus, a.no-color:hover {
   color: inherit; }
 
-.portfolio-box > img {
-  filter: grayscale(30%); }
+.portfolio-box img {
+  width: 100%; }
+
+.portfolio-box .box-title {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  opacity: 0;
+  transition: opacity .35s ease-in-out; }
+  .portfolio-box .box-title h2 {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%; }
+
+.portfolio-box:hover > .box-title {
+  opacity: 1; }
 
 .portfolio-box:hover > img {
   filter: none; }
@@ -478,5 +501,27 @@ a.no-color, a.no-color:focus, a.no-color:hover {
 .icon-3d {
   height: 56px;
   fill: #d47965; }
+
+.hidden-images {
+  display: none; }
+
+.gallery-close {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  position: absolute;
+  right: 10px !important;
+  top: 0;
+  text-decoration: none;
+  text-align: center;
+  opacity: .65;
+  padding: 0 0 18px 10px;
+  color: #FFF;
+  font-style: normal;
+  font-size: 28px;
+  font-family: Arial,Baskerville,monospace; }
+
+.gallery-close:hover {
+  text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */
