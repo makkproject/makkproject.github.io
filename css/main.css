@@ -473,7 +473,7 @@ a.no-color, a.no-color:focus, a.no-color:hover {
     align-content: center;
     align-items: center;
     width: 100%;
-    font-size: 30px;
+    font-size: 18px;
     padding: 35px; }
 
 .portfolio-box:hover > .box-title {
