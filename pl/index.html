@@ -1,6 +1,8 @@
+<!--
 ---
 layout: compress
 ---
+-->
 <!DOCTYPE html>
 <html lang="pl">
     <head>
@@ -27,8 +29,31 @@ layout: compress
         <!-- Theme CSS -->
         <link href="../css/main.css" rel="stylesheet">
 
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <!-- Fancybox CSS -->
+        <link href="../fancybox/jquery.fancybox.css" rel="stylesheet">
+        <link href="../fancybox/jquery.fancybox-thumbs.css" rel="stylesheet">
+
+
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-93339346-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,19 +82,19 @@ layout: compress
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="home-link">
-                            <a class="page-scroll" href="#home">GŁÓWNA</a>
+                            <a class="page-scroll" href="#home">Home</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#services">OFERTA</a>
+                            <a class="page-scroll" href="#services">Services</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="#portfolio">Portfolio</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#about">O NAS</a>
+                            <a class="page-scroll" href="#about">About</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#contact">KONTAKT</a>
+                            <a class="page-scroll" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -86,7 +111,7 @@ layout: compress
             </div>
             <div class="text-right description-tapes hidden-xs">
                 <div class="tape">
-                    <h3>PROFESJONALNE WIZUALIZACJE ARCHITEKTONICZNE</h3>
+                    <h3>Professional rendering services</h3>
                 </div>
                 <div class="tape">
                     <h4>Done with the greatest precision</h4>
@@ -101,7 +126,7 @@ layout: compress
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">OFERTA</h2>
+                        <h2 class="section-heading">Services</h2>
                         <hr class="primary">
                     </div>
                 </div>
@@ -109,7 +134,7 @@ layout: compress
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-justify">
-                        <p>Zajmujemy się wykonywaniem wysokiej jakości wizualizacji architektonicznych oraz modelowaniem 3D. Posiadamy wiedzę z zakresu zaawansowanych technik tworzenia fotorealistycznej grafiki. W zależności od oczekiwań klienta, nadajemy naszym projektom unikalny charakter, dostosowany do indywidualnych potrzeb. Pracę wykonujemy w oparciu o dokumentację 2D, 3D lub fotograficzną.</p>
+                        <p>We produce high-quality visualisations to make your project even more persuasive in order to get the deserved attention. Our familiarity with the most advanced graphic rendering technologies and methods guarantees the effectiveness of your work. Depending on your needs  we are able to achieve any desired effect. The input of our work might be 3D models, 2D plans or photographic documentation provided by you.</p>
                     </div>
                 </div>
             </div>
@@ -118,15 +143,15 @@ layout: compress
                     <div class="col-md-4 text-center">
                         <div class="service-box">
                             <i class="fa fa-4x fa-home text-primary sr-icons"></i>
-                            <h3>WIZUALIZACJE</h3>
-                            <p class="text-muted">Fotorealistyczne wizualizacje przedmiotów, wnętrz, budynków i założeń urbanistycznych, wykonane ze szczególną dbałością o detale.</p>
+                            <h3>Visualisations</h3>
+                            <p class="text-muted">Highly-detailed visualisations of objects, interiors and exteriors.</p>
                         </div>
                     </div>
                     <div class="col-md-4 text-center">
                         <div class="service-box">
                             <i class="fa fa-4x fa-cubes text-primary sr-icons"></i>
-                            <h3>MODELOWANIE 3D</h3>
-                            <p class="text-muted">Precyzyjnie odwzorowane modele 3D przedmiotów, obiektów inżynierskich oraz budynków wraz z otoczeniem.</p>
+                            <h3>3D modeling</h3>
+                            <p class="text-muted">3D models of objects, engineering structures, buildings and urban schemes.</p>
                         </div>
                     </div>
                     <div class="col-md-4 text-center">
@@ -178,8 +203,8 @@ layout: compress
                                 </g>
                                 </svg>
                             </i>
-                            <h3>ANIMACJE 3D</h3>
-                            <p class="text-muted">Kompleksowe tworzenie animacji 3D wraz z profesjonalną postprodukcją.</p>
+                            <h3>3D animations</h3>
+                            <p class="text-muted">3D animations with professional post-production</p>
                         </div>
                     </div>
                 </div>
@@ -194,38 +219,134 @@ layout: compress
                     <hr class="primary">
                 </div>
             </aside>
+
+            <div class="row no-gutter">
+
+                <!-- 1st Fancybox gallery -->
+                <div class="col-lg-4 col-xs-6">
+                    <a class="slideshow-thumbs2 portfolio-box" rel="slideshow-thumbs1" href="../img/portfolio/1/main1.jpg">
+                        <img src="../img/portfolio/1/thumb1.jpg" alt="" />
+                        <div class="box-title">
+                            <h2>Single family house (ARCH-PRO)</h2>
+                        </div>
+                    </a>
+                    <div class="hidden-images">
+                        <a class="slideshow-thumbs2" rel="slideshow-thumbs1" href="../img/portfolio/1/main2.jpg" >
+                            <img src="../img/portfolio/1/thumb2.jpg" alt="" />
+                        </a>
+
+                    </div>
+                </div>
+                <!-- 2nd Fancybox gallery -->
+                <div class="col-lg-4 col-xs-6">
+                    <a class="slideshow-thumbs2 portfolio-box" rel="slideshow-thumbs2" href="../img/portfolio/2/main1.jpg">
+                        <img src="../img/portfolio/2/thumb1.jpg" alt="" />
+                        <div class="box-title">
+                            <h2>Apartment block (KM Invest)</h2>
+                        </div>
+                    </a>
+                    <div class="hidden-images">
+                        <a class="slideshow-thumbs2" rel="slideshow-thumbs2" href="../img/portfolio/2/main2.jpg" >
+                            <img src="../img/portfolio/2/thumb2.jpg" alt="" />
+                        </a>
+                        <a class="slideshow-thumbs2" rel="slideshow-thumbs2" href="../img/portfolio/2/main3.jpg" >
+                            <img src="../img/portfolio/2/thumb3.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <!-- 3rd Fancybox gallery -->
+                <div class="col-lg-4 col-xs-6">
+                    <a class="slideshow-thumbs2 portfolio-box" rel="slideshow-thumbs3" href="../img/portfolio/3/main1.jpg">
+                        <img src="../img/portfolio/3/thumb1.jpg" alt="" />
+                        <div class="box-title">
+                            <h2>The Forest Villa</h2>
+                        </div>
+                    </a>
+                    <div class="hidden-images">
+                        <a class="slideshow-thumbs2" rel="slideshow-thumbs3" href="../img/portfolio/3/main2.jpg" >
+                            <img src="../img/portfolio/3/thumb2.jpg" alt="" />
+                        </a>
+                      
+                    </div>
+                </div>
+                <!-- 4th Fancybox gallery -->
+                <div class="col-lg-4 col-xs-6">
+                    <a class="slideshow-thumbs2 portfolio-box" rel="slideshow-thumbs4" href="../img/portfolio/4/main1.jpg">
+                        <img src="../img/portfolio/4/thumb1.jpg" alt="" />
+                        <div class="box-title">
+                            <h2>Concrete house</h2>
+                        </div>
+                    </a>
+                    <div class="hidden-images">
+                        <a class="slideshow-thumbs2" rel="slideshow-thumbs4" href="../img/portfolio/4/main2.jpg" >
+                            <img src="../img/portfolio/4/thumb2.jpg" alt="" />
+                        </a>
+                      
+                    </div>
+                </div>
+                <!-- 5th Fancybox gallery -->
+                <div class="col-lg-4 col-xs-6">
+                    <a class="slideshow-thumbs2 portfolio-box" rel="slideshow-thumbs5" href="../img/portfolio/5/main1.jpg">
+                        <img src="../img/portfolio/5/thumb1.jpg" alt="" />
+                        <div class="box-title">
+                            <h2>Single family house (ARCH-PRO)</h2>
+                        </div>
+                    </a>
+                    <div class="hidden-images">
+                        <a class="slideshow-thumbs2" rel="slideshow-thumbs5" href="../img/portfolio/5/main2.jpg" >
+                            <img src="../img/portfolio/5/thumb2.jpg" alt="" />
+                        </a>
+                      
+                    </div>
+                </div>
+                <!-- 6th Fancybox gallery -->
+                <div class="col-lg-4 col-xs-6">
+                    <a class="slideshow-thumbs2 portfolio-box" rel="slideshow-thumbs6" href="../img/portfolio/6/main1.jpg">
+                        <img src="../img/portfolio/6/thumb1.jpg" alt="" />
+                        <div class="box-title">
+                            <h2>White modern apartment</h2>
+                        </div>
+                    </a>
+                    <div class="hidden-images">
+                       
+                      
+                    </div>
+                </div>
+            </div>
+            <!--
             <div class="container-fluid">
                 <div class="row no-gutter popup-gallery">
                     {% for post in site.posts reversed %}
                     <div class="col-lg-4 col-xs-6">
-                        <a href="../img/portfolio/{{ post.image }}" class="portfolio-box">
-                            <img src="../img/portfolio/thb-{{ post.image }}" class="img-responsive" alt="">
-                            <!--
-                            <div class="portfolio-box-caption">
-                              <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                  {{ post.category }}
-                                </div>
-                                <div class="project-name">
-                                  {{ post.title }}
-                                </div>
-                              </div>
-                            </div>
-                            -->
-                        </a>
-                    </div>
-                    {% endfor %}
+                        <a href="img/portfolio/{{ post.image }}" class="portfolio-box">
+                            <img src="img/portfolio/thb-{{ post.image }}" class="img-responsive" alt="">
+            <!--
+            <div class="portfolio-box-caption">
+              <div class="portfolio-box-caption-content">
+                <div class="project-category text-faded">
+                  {{ post.category }}
                 </div>
+                <div class="project-name">
+                  {{ post.title }}
+                </div>
+              </div>
             </div>
-            <aside class="bg-dark">
-            </aside>
+           
+        </a>
+    </div>
+    {% endfor %}
+</div>
+</div>
+<aside class="bg-dark">
+</aside>
+            -->
         </section>
 
         <section id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">O NAS</h2>
+                        <h2 class="section-heading">About</h2>
                         <hr class="primary">
                     </div>
                 </div>
@@ -233,18 +354,18 @@ layout: compress
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-justify">
-                        <p>Jesteśmy zespołem profesjonalistów z wykształceniem architektonicznym. MAKK PROJECT to inicjatywa, która powstała z połączenia pasji, wiedzy oraz umiejętności. Zachęcamy do kontaktu celem uzyskania dodatkowych informacji.</p>
+                        <p>We are a well organized team of young professionals with architectural background. Our intention was to create a space where we can spend time on our interests and at the same time offer our knowledge to others. To find out more, do not hesitate to contact us.</p>
                     </div>
                     <div class="col-md-6 text-center">
                         <div class="service-box">
                             <div class="row">
                                 <div class="col-xs-8 col-xs-offset-2">
-                                    <img data-src="holder.js/140x140" class="img-circle img-responsive sr-team" src="../img/ola.jpg" data-holder-rendered="true">
+                                    <img data-src="holder.js/140x140" class="img-circle img-responsive sr-team" src="img/ola.jpg" data-holder-rendered="true">
                                 </div>
                             </div>
                             <div class="row">
                                 <h3>Aleksandra</h3>
-                                <p class="text-muted text-justify">Architekt, projektant i podróżnik. Pasjonuje się szeroko pojętą sztuką współczesną. Stawia sobie w życiu cele, które konsekwentnie realizuje. Nie boi się wyzwań i wciąż poszukuje nowych możliwości rozwoju.</p>
+                                <p class="text-muted text-justify">An architect, a designer and a traveller who is passionate about contemporary art and other forms of creative activities. In addition to this she has a goal oriented and focused personality. Her eagerness to find new solutions causes the birth of unprecedented ideas and further professional and personal development.</p>
                             </div>
                         </div>
                     </div>
@@ -252,12 +373,12 @@ layout: compress
                         <div class="service-box">
                             <div class="row">
                                 <div class="col-xs-8 col-xs-offset-2">
-                                    <img data-src="holder.js/140x140" class="img-circle img-responsive sr-team" src="../img/magda.jpg" data-holder-rendered="true">
+                                    <img data-src="holder.js/140x140" class="img-circle img-responsive sr-team" src="img/magda.jpg" data-holder-rendered="true">
                                 </div>
                             </div>
                             <div class="row">
                                 <h3>Magdalena</h3>
-                                <p class="text-muted text-justify">Architekt, artystka, która wbrew stereotypom twardo stąpa po ziemi. Od dziecka zafascynowana wszelkimi formami ekspresji wizualnej. Charakteryzuje ją profesjonalne podejście do realizowanych zadań.</p>
+                                <p class="text-muted text-justify">An architect and an artist who, against all stereotypes, keeps both feet on the ground.  Involved in forms of visual expressions from early childhood. Oil painting or computer graphics? It does not matter because she has never been bored. As a result she is a creative and passionate young professional who is never short of new ideas.</p>
                             </div>
                         </div>
                     </div>
@@ -269,7 +390,7 @@ layout: compress
             <div class="container">
                 <div class="row">
                     <div class="text-center">
-                        <h2 class="section-heading">Skontaktuj się z Nami</h2>
+                        <h2 class="section-heading">Contact us</h2>
                         <hr class="primary">
                     </div>
                 </div>
@@ -278,7 +399,7 @@ layout: compress
                         <form class="form-horizontal" action="https://formspree.io/makkproject@gmail.com" method="POST">
                             <input type="text" name="_gotcha" style="display:none" />
                             <div class="form-group row">
-                                <label class="col-md-4 control-label" for="#contact-name">Imię i Nazwisko</label>
+                                <label class="col-md-4 control-label" for="#contact-name">Name</label>
                                 <div class="col-md-8">
                                     <input type="text" name="name" id="contact-name" placeholder="" class="form-control">
                                 </div>
@@ -290,20 +411,20 @@ layout: compress
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-md-4 control-label" for="#contact-phone">Telefon</label>
+                                <label class="col-md-4 control-label" for="#contact-phone">Phone</label>
                                 <div class="col-md-8">
                                     <input type="text" name="phone" id="contact-phone" placeholder="" class="form-control">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-md-4 control-label" for="#contact-message">Treść Wiadomości</label>
+                                <label class="col-md-4 control-label" for="#contact-message">Message</label>
                                 <div class="col-md-8">
                                     <textarea name="message" class="form-control" id="contact-message" rows="10"></textarea>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-4 col-md-offset-8">
-                                    <button role="submit" class="btn btn-primary btn-xl pull-right">Wyślij</button>
+                                    <button role="submit" class="btn btn-primary btn-xl pull-right">Submit</button>
                                 </div>
                             </div>
                         </form>
@@ -363,7 +484,7 @@ layout: compress
                 </div>
             </div>
         </section>
-        
+
         <section id="cookie-warn">
             <div class="icon-cookie"></div>
             <p><strong>UWAGA!</strong> Nasza strona u&#380;ywa ciasteczek (cookies), do analizy odwiedzin, dzi&#281;ki czemu nasz serwis mo&#380;e dzia&#322;a&#263; lepiej.
@@ -379,9 +500,12 @@ layout: compress
         <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.2/scrollreveal.min.js" integrity="sha256-VEi+Miellnpla/8/PPCL+k8s+/vb+uKFqdqtQ/d2HSo=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha256-P93G0oq6PBPWTP1IR8Mz/0jHHUpaWL0aBJTKauisG7Q=" crossorigin="anonymous"></script>
         <!-- Theme JavaScript -->
-        <script src="js/main.js"></script>
-        
-          <script>
+        <script src="../js/main.js"></script>
+        <!-- Fancybox JavaScript -->
+        <script src="../fancybox/jquery.fancybox.js"></script>
+        <script src="../fancybox/jquery.fancybox-thumbs.js"></script>
+
+        <script>
             $().ready(function () {
                 var sName = "cookiesok";
                 $("#close-cookie-warn").click(function () {
@@ -397,6 +521,118 @@ layout: compress
                     $("#cookie-warn").show();
                 }
             });
+        </script>
+
+
+        <script>
+            $(document).ready(function () {
+
+                $('.slideshow-thumbs1').fancybox({
+                    prevEffect: 'none',
+                    nextEffect: 'none',
+                    helpers: {
+                        // This thumbs feature requires 2 unique Fancybox files (.js, .css) called Thumbnail Helper files.
+                        // When used as shown and with the extra two files above, it places mini thumbnails inside modal.
+                        // The extra files are inside the 'helper' folder when you download Fancybox2 from the homepage.
+                        thumbs: {
+                            width: 100,
+                            height: 50
+                        }
+                    }
+                });
+
+            });
+
+            $(document).ready(function () {
+
+                $('.slideshow-thumbs2').fancybox({
+                    prevEffect: 'none',
+                    nextEffect: 'none',
+                    helpers: {
+                        // This thumbs feature requires 2 unique Fancybox files (.js, .css) called Thumbnail Helper files.
+                        // When used as shown and with the extra two files above, it places mini thumbnails inside modal.
+                        // The extra files are inside the 'helper' folder when you download Fancybox2 from the homepage.
+                        thumbs: {
+                            width: 100,
+                            height: 50
+                        }
+                    }
+                });
+
+            });
+
+            $(document).ready(function () {
+
+                $('.slideshow-thumbs3').fancybox({
+                    prevEffect: 'none',
+                    nextEffect: 'none',
+                    helpers: {
+                        // This thumbs feature requires 2 unique Fancybox files (.js, .css) called Thumbnail Helper files.
+                        // When used as shown and with the extra two files above, it places mini thumbnails inside modal.
+                        // The extra files are inside the 'helper' folder when you download Fancybox2 from the homepage.
+                        thumbs: {
+                            width: 100,
+                            height: 50
+                        }
+                    }
+                });
+
+            });
+
+            $(document).ready(function () {
+
+                $('.slideshow-thumbs4').fancybox({
+                    prevEffect: 'none',
+                    nextEffect: 'none',
+                    helpers: {
+                        // This thumbs feature requires 2 unique Fancybox files (.js, .css) called Thumbnail Helper files.
+                        // When used as shown and with the extra two files above, it places mini thumbnails inside modal.
+                        // The extra files are inside the 'helper' folder when you download Fancybox2 from the homepage.
+                        thumbs: {
+                            width: 100,
+                            height: 50
+                        }
+                    }
+                });
+
+            });
+
+            $(document).ready(function () {
+
+                $('.slideshow-thumbs5').fancybox({
+                    prevEffect: 'none',
+                    nextEffect: 'none',
+                    helpers: {
+                        // This thumbs feature requires 2 unique Fancybox files (.js, .css) called Thumbnail Helper files.
+                        // When used as shown and with the extra two files above, it places mini thumbnails inside modal.
+                        // The extra files are inside the 'helper' folder when you download Fancybox2 from the homepage.
+                        thumbs: {
+                            width: 100,
+                            height: 50
+                        }
+                    }
+                });
+
+            });
+
+            $(document).ready(function () {
+
+                $('.slideshow-thumbs6').fancybox({
+                    prevEffect: 'none',
+                    nextEffect: 'none',
+                    helpers: {
+                        // This thumbs feature requires 2 unique Fancybox files (.js, .css) called Thumbnail Helper files.
+                        // When used as shown and with the extra two files above, it places mini thumbnails inside modal.
+                        // The extra files are inside the 'helper' folder when you download Fancybox2 from the homepage.
+                        thumbs: {
+                            width: 100,
+                            height: 50
+                        }
+                    }
+                });
+
+            });
+
         </script>
     </body>
 </html>
